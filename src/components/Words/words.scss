@@ -1,0 +1,31 @@
+.WordsContainer {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 30px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .wordsFlex { 
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+        .word {
+            width: fit-content;
+            background-color: whitesmoke;
+            color: black;
+            border-radius: 14px;
+            padding: 5px 15px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+    
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
