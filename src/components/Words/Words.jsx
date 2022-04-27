@@ -1,12 +1,13 @@
 import "./words.scss"
 
-const Words = () => {
+const Words = ({words}) => {
   return (
     <div className="WordsContainer">
         <h2>Fetched Words</h2>
         <div className="wordsFlex">
-            <div className="word">Flexing</div>
-            <div className="word">Central</div>
+            {words.map((i) => (
+              <div className="word">{i[0].word}</div>
+            ))}
         </div>
     </div>
   )
